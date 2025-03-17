@@ -13,8 +13,10 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 
 .conteudo-principal {
     display: flex;
@@ -24,18 +26,25 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .titulo-principal {
     text-align: left;
     width: 100%;
     font-size: 32px;
+    margin-bottom: 20px;
 }
 
 .titulo-principal span {
     color: var(--verde);
 }
 
+.botoes {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 .botao {
     font-family: 'Chakra Petch', sans-serif;
@@ -43,22 +52,18 @@ body {
     color: var(--branco);
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1em;
     font-size: 18px;
-    align-items: center;
     width: 100%;
+    border: none;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .botao:first-child {
     border-radius: 40px 40px 0 0;
-}
-
-.botoes {
-    display: block;
 }
 
 .botao.ativo {
@@ -66,39 +71,48 @@ body {
     border-bottom: 4px solid var(--verde);
 }
 
+.botao:hover {
+    background-color: var(--botao-ativo);
+    transform: translateY(-2px);
+}
+
 .abas-textos {
     background-color: var(--texto-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
-}
-
-.aba-conteudo.ativo {
-    display: block;
+    width: 100%;
+    max-width: 800px;
 }
 
 .aba-conteudo {
     display: none;
 }
 
+.aba-conteudo.ativo {
+    display: block;
+}
+
 .aba-conteudo-titulo-principal {
     font-size: 28px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .aba-conteudo-titulo-secundario {
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .contador {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 16px;
 }
 
 .contador-digito {
-    padding: 0 16px;
     text-align: center;
     min-width: 100px;
 }
@@ -106,19 +120,18 @@ body {
 .contador-digito-numero {
     font-size: 80px;
     margin: 0;
-
 }
 
 .contador-digito-texto {
     color: var(--verde);
     font-size: 20px;
     margin: 0;
-
 }
 
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
+        gap: 8px;
     }
 
     .botao:first-child {

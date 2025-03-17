@@ -11,7 +11,7 @@
 
 body {
     background-color: var(--cor-de-fundo);
-    color: var(--rosa);
+    color: var(--preto);
     font-family: 'Chakra Petch', sans-serif;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ body {
 }
 
 .titulo-principal span {
-    color: var(--verde);
+    color: var(--branco);
 }
 
 .botoes {
@@ -68,7 +68,7 @@ body {
 
 .botao.ativo {
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--branco);
 }
 
 .botao:hover {
@@ -100,7 +100,7 @@ body {
 
 .aba-conteudo-titulo-secundario {
     text-align: center;
-    color: var(--verde);
+    color: var(--branco);
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -123,7 +123,7 @@ body {
 }
 
 .contador-digito-texto {
-    color: var(--verde);
+    color: var(--branco);
     font-size: 20px;
     margin: 0;
 }

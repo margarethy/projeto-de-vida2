@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background: url('download.jpeg');
     color: var(--preto);
     font-family: 'Chakra Petch', sans-serif;
     margin: 0;
